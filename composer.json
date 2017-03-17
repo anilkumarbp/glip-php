@@ -1,0 +1,38 @@
+{
+  "name": "glip-php",
+  "type": "library",
+  "description": "RingCentral PHP Library for Glip",
+  "keywords": [
+    "php",
+    "sdk",
+    "ringcentral",
+    "connect",
+    "platform",
+    "api"
+  ],
+  "homepage": "http://developers.ringcentral.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anil Kumar",
+      "email": "anil.kumar@ringcentral.com"
+    },
+    {
+      "name": "RingCentral, Inc.",
+      "email": "devsupport@ringcentral.com"
+    }
+  ],
+  "require": {
+    "ringcentral/ringcentral-php": "^2.0.0",
+    "vlucas/phpdotenv": "^2.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "satooshi/php-coveralls": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Glip\\SDK\\": "src/"
+    }
+  }
+}
