@@ -1,5 +1,5 @@
 {
-  "name": "rc/glip-php",
+  "name": "ringcentral/glip-php",
   "type": "library",
   "description": "RingCentral PHP Library for Glip",
   "keywords": [
