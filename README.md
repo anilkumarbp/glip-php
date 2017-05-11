@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.org/anilkumarb/glip-php.svg?branch=master)](https://travis-ci.org/anilkumarbp/glip-php)
+[![Code Climate](https://img.shields.io/codeclimate/github/anilkumarbp/glip-php.svg)](https://codeclimate.com/github/anilkumarbp/glip-php)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![David](https://img.shields.io/david/expressjs/express.svg)](https://david-dm.org/anilkumarbp/glipped)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/55a769f3484b4479b454b2a8b080cb66)](https://www.codacy.com/app/anilkumarbp/glip-php?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=anilkumarbp/glip-php&amp;utm_campaign=Badge_Grade)
+
+
 # glip-php
 Sample Glip Implementation in PHP
 

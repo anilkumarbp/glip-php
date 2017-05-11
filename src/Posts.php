@@ -28,7 +28,7 @@ class Posts
      * @param $options
      * @return mixed
      */
-    public function get($options)
+    public function get($options = null)
     {
         if($options && $options['postId'])
         {
@@ -36,7 +36,8 @@ class Posts
         }
         else
         {
-            return $this->rc->platform()->get('/glip/posts', $options);
+            print 'Within empty post';
+            return $this->rc->platform()->get('/glip/posts');
         }
     }
 

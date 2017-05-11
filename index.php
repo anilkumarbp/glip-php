@@ -37,11 +37,19 @@ try  {
     print PHP_EOL . 'Logged in : '. PHP_EOL . print_r(json_encode($gc->getToken(), JSON_PRETTY_PRINT));
 
 
-    // Send message to a Group by GroupID
-    $posts = $gc->posts()->get([
-        'groupId'=> $_ENV['GROUP'],
-        'text' => 'sample test'
-    ]);
+    // Get the user Groups available in the account
+    $posts = $gc->groups()->get();
+
+    print 'The Group List is :' . print_r($posts->json());
+
+
+    // Post a message by Group ID
+    $postCreate = $gc->posts()->post([
+        'text' => 'sample hi message from pawan2',
+	    'groupId' => 3607527430
+    ])->json();
+
+    print 'The response for creating a post is :' . print_r($postCreate);
 
     // Get Messages by GroupId
     $messages = $gc->posts()->get([

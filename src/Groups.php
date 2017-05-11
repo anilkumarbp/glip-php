@@ -16,7 +16,7 @@ class Groups
      * @param $options
      * @return mixed
      */
-    public function get($options)
+    public function get($options=null)
     {
         if($options && $options['postId'])
         {
@@ -24,7 +24,8 @@ class Groups
         }
         else
         {
-            return $this->rc->platform()->get('/glip/groups', $options);
+            print 'the platform is logged in :' . PHP_EOL . print_r($this->rc->platform()->auth());
+            return $this->rc->platform()->get('/glip/groups');
         }
     }
 
